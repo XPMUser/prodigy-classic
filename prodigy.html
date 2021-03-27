@@ -4,7 +4,7 @@
         <title>Prodigy</title>
         <meta charset="UTF-8" />
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-        <link rel="icon" type="image/png" href="/Includes/Images/favicon.gif">
+        <link rel="icon" type="image/png" href="/favicon.ico">
         <link rel="stylesheet" href="/Includes/Styles/Fonts/Font-Awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/assets/styles/main.css?v=cubone-1-4-0">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
@@ -750,40 +750,11 @@
 <body>
 
 <!-- Chrome App Install Prompt -->
-<div id='add-to-chrome-bar' class="js-notice-bar notice-bar notice-bar--md notice-bar--game notice-bar--chrome gone">
-    <div class="notice-bar__wrapper">
-        Play Prodigy faster with our new Chrome app
-        <button id='add-to-chrome-button' class='btn btn--sm notice-bar__button'><i class="icon fa fa-plus"></i> <strong>Add to Chrome</strong></button>
-        <i class="js-notice-bar-close notice-bar__close fa fa-times"></i>
-    </div>
-</div>
 <!-- End Chrome App Install Prompt -->
 
 
 <!-- iOS App Install Prompt -->
-<div id='ios-install-prompt' class='ios-install-prompt gone'>
-    <div class='ios-install-prompt__wrapper'>
-        <i class='fa fa-times js-ios-install-prompt-close ios-install-prompt__close'></i>
-        <a class='js-ios-install-prompt-link'>
-            <img class='ios-install-prompt__icon' src="/assets/images/app/icon-rounded.png" />
-            <div class='ios-install-prompt__data'>
-                <span class='ios-install-prompt__title'>Prodigy Math Game</span>
-                <span class='ios-install-prompt__label'>Prodigy</span>
-                <span class='ios-install-prompt__label'>
-                    <i class='fa fa-star ios-install-prompt__star'></i>
-                    <i class='fa fa-star ios-install-prompt__star'></i>
-                    <i class='fa fa-star ios-install-prompt__star'></i>
-                    <i class='fa fa-star ios-install-prompt__star'></i>
-                    <i class='fa fa-star ios-install-prompt__star'></i>
-                </span>
-                <span class='ios-install-prompt__label'>GET - On the App Store</span>
 
-            </div>
-        </a>
-        
-        <a class='ios-install-prompt__link js-ios-install-prompt-link'>View</a>
-    </div>
-</div>
 <!-- End Chrome App Install Prompt -->
 
     <!-- <div id='service-announcement' class='announcement'>
@@ -941,8 +912,6 @@
         };
 
         $(document).ready(function() {
-            var chromeInstallPrompt = new SW.ChromeInstallPromptView();
-            var appleInstallPrompt = new SW.AppleInstallPromptView();
             prodigyWeb.gameDialogManager = new SW.GameDialogManager();
 
             if(SW.Device.isDeprecatedIpad() || SW.Device.isDeprecatedIphone()) {
